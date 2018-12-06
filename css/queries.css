@@ -225,7 +225,7 @@
     .events .rightcol {
         padding: 0 20px;
     }
-    
+
     #eng-pics .img-wrap {
         border-radius: 0;
     }
@@ -233,14 +233,10 @@
     #map-content-wrapper {
         margin-bottom: 40px;
     }
-    
+
     #map-content {
         margin-top: 0;
         padding: 35px;
-    }
-
-    .rsvp {
-        padding-top: 40px;
     }
 
     footer .social-share {
@@ -268,7 +264,7 @@
     #map-content-wrapper {
         margin-bottom: 0;
     }
-    
+
     footer ul.footer-group {
         border-top: none;
     }
@@ -295,7 +291,7 @@
     .hero .hero-content {
         padding-top: 110%;
     }
-    
+
     .hero .hero-content img {
         width: 65%;
     }
@@ -318,33 +314,6 @@
         margin-right: 0px;
     }
 
-    .features .device-showcase-left {
-        position: absolute;
-        bottom: -392px;
-        left: 41%;
-        right: auto;
-        transform: translateX(-50%);
-    }
-
-    .features .ipad-wrap {
-        width: 706px;
-        height: 1002px;
-        background: url("../img/ipad-device.png") no-repeat center center;
-        z-index: 1;
-        background-size: 40%;
-    }
-
-    .features .iphone-wrap {
-        width: 304px;
-        height: 617px;
-        background: url("../img/iphone6.png") no-repeat center center;
-        position: absolute;
-        left: 350px;
-        bottom: 129px;
-        z-index: 2;
-        background-size: 40%;
-    }
-
     .features {
         padding-bottom: 0;
     }
@@ -358,9 +327,5 @@
 @media screen and (max-width: 320px) {
     .hero .hero-content {
         padding-top: 130%;
-    }
-
-    .rsvp {
-        padding-top: 20px;
     }
 }
