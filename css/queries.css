@@ -3,12 +3,6 @@
         width: 90%;
         margin: 0 auto;
     }
-
-    .intro-content {
-        display: inline-block;
-        width: 70%;
-    }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -48,10 +42,6 @@
 
     .navicon {
         visibility: visible;
-    }
-
-    header .nav-wrapper {
-        display: absolute;
     }
 
     header nav {
@@ -181,39 +171,8 @@
         transition-delay: 0.30s
     }
 
-    .intro-content {
-        display: inline-block;
-        width: 75%;
-        margin-bottom: 30px;
-    }
-
     .last {
         margin: 0;
-    }
-
-    .features {
-        padding-bottom: 0;
-    }
-
-    .features .device-showcase,
-    .features-extra .macbook-wrap {
-        display: none;
-    }
-
-    .features .responsive-feature-img,
-    .features-extra .responsive-feature-img {
-        display: block;
-        width: 85%;
-        margin: 15% auto 0;
-    }
-
-    .features .responsive-feature-img img,
-    .features-extra .responsive-feature-img img {
-        width: 100%;
-    }
-
-    .hero-strip {
-        margin-top: 0;
     }
 
     .events .leftcol {
@@ -238,14 +197,6 @@
         margin-top: 0;
         padding: 35px;
     }
-
-    footer .social-share {
-        display: none;
-    }
-
-    footer .footer-links {
-        margin: 120px 0 120px 0;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -264,27 +215,6 @@
     #map-content-wrapper {
         margin-bottom: 0;
     }
-
-    footer ul.footer-group {
-        border-top: none;
-    }
-
-    footer ul.footer-group li a {
-        font-size: 13px;
-        text-transform: uppercase;
-        padding: 20px 0;
-        display: block;
-        border-bottom: dashed 1px #4E566C;
-    }
-
-    footer ul.footer-group li {
-        display: block;
-    }
-
-    footer .footer-links {
-        margin: 50px 0 50px 0;
-    }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -312,10 +242,6 @@
 
     .btn-margin-right {
         margin-right: 0px;
-    }
-
-    .features {
-        padding-bottom: 0;
     }
 
     .down-arrow {

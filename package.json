@@ -16,7 +16,7 @@
     "template",
     "website template"
   ],
-  "author": "Sam Patra",
+  "author": "Sam Rubin",
   "license": "GPL-3.0",
   "homepage": "https://github.com/smrubin/wedding-website",
   "devDependencies": {
