@@ -1,6 +1,5 @@
 # Wedding Website
-A beautiful, feature rich, device friendly wedding website.
-_See [rachelandsamwedding.com](https://rachelandsamwedding.com/) for a demo.
+A beautiful, feature rich, device friendly wedding website. See [rachelandsamwedding.com](https://rachelandsamwedding.com/) for a demo.
 
 # Highlights
 1. Slick and fully __responsive__ design.

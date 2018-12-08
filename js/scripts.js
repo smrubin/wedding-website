@@ -180,30 +180,17 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var itc_kol = {lat: 22.5932759, lng: 88.27027720000001};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: itc_kol,
+    var mountIdaGeo = {lat: 37.8466, lng: -78.4989};
+	var cvilleGeo = {lat: 38.0293, lng: -78.4767};
+
+	var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 14,
+        center: cvilleGeo,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
-        position: itc_kol,
+    var mountIdaMarker = new google.maps.Marker({
+        position: mountIdaGeo,
         map: map
     });
 }
-
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
-
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
-}
-
