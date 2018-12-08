@@ -169,4 +169,7 @@
             getClass(params),
             getOrGenerateCalendarId(params));
     };
+
+    // TODO - Find a better way to expose this globally.
+    window.createCalendar = exports.createCalendar;
 })(this);

@@ -20,7 +20,7 @@ gulp.task('sass:watch', function () {
 
 // minify js
 gulp.task('minify-js', function () {
-    return gulp.src('./js/scripts.js')
+    return gulp.src('./js/app.js')
         .pipe(uglify())
         .pipe(rename({basename: 'scripts.min'}))
         .pipe(gulp.dest('./js'));

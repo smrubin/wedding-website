@@ -1,3 +1,9 @@
+import './vendor/bootstrap.min.js';
+import './vendor/ouical.js';
+import './vendor/jquery.fancybox.pack.js';
+import './vendor/jquery.mb.YTPlayer.min.js';
+import 'waypoints/lib/jquery.waypoints.js';
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -53,12 +59,6 @@ $(document).ready(function () {
 		offset: '75%'
 	});
 
-
-    /***************** Initiate Flexslider ******************/
-    $('.flexslider').flexslider({
-        animation: "slide"
-    });
-
     /***************** Initiate Fancybox ******************/
 
     $('.single_image').fancybox({
@@ -82,11 +82,11 @@ $(document).ready(function () {
         $('.header-nav').toggleClass('open');
         event.preventDefault();
     });
+
     /* When user clicks a link */
     $('.header-nav li a').click(function () {
         $('.nav-toggle').toggleClass('active');
         $('.header-nav').toggleClass('open');
-
     });
 
     /***************** Header BG Scroll ******************/
@@ -175,22 +175,3 @@ $(document).ready(function () {
     $('#add-to-cal').html(myCalendar);
 
 });
-
-/********************** Extras **********************/
-
-// Google map
-function initMap() {
-    var mountIdaGeo = {lat: 37.8466, lng: -78.4989};
-	var cvilleGeo = {lat: 38.0293, lng: -78.4767};
-
-	var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 14,
-        center: cvilleGeo,
-        scrollwheel: false
-    });
-
-    var mountIdaMarker = new google.maps.Marker({
-        position: mountIdaGeo,
-        map: map
-    });
-}

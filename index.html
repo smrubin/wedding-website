@@ -21,15 +21,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
+
+	<link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -360,15 +355,27 @@
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
+<script>
+	// Google map
+	function initMap() {
+		var mountIdaGeo = {lat: 37.8466, lng: -78.4989};
+		var cvilleGeo = {lat: 38.0293, lng: -78.4767};
+
+		var map = new google.maps.Map(document.getElementById('map-canvas'), {
+			zoom: 14,
+			center: cvilleGeo,
+			scrollwheel: false
+		});
+
+		var mountIdaMarker = new google.maps.Marker({
+			position: mountIdaGeo,
+			map: map
+		});
+	}
+</script>
+
+<script src="dist/main.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALO1yilSCcO4w4OOIp_B0E86Beqdgo2Sw&callback=initMap"></script>
+
 </body>
 </html>
