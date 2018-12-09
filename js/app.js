@@ -37,11 +37,6 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
-    $('.wp7').waypoint(function () {
-        $('.wp7').addClass('animated fadeInUp');
-    }, {
-        offset: '75%'
-    });
     $('.wp8').waypoint(function () {
         $('.wp8').addClass('animated fadeInLeft');
     }, {
@@ -52,11 +47,6 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
-	$('.wp10').waypoint(function () {
-		$('.wp10').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
 
     /***************** Initiate Fancybox ******************/
 
