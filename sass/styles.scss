@@ -444,15 +444,18 @@ Engagement Pics
 Embed video
 ========================================================================== */
 #video-bg {
-  height: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 #video-content {
   width: 100%;
   height: 100%;
-  padding-top: 100px;
-  position: relative;
+  padding-top: 160px;
+  position: absolute;
   background: rgba(17, 17, 17, 0.5);
   text-align: center;
+  z-index: 1;
 }
 #video-content h5 {
   color: #ffffff;
@@ -462,6 +465,22 @@ Embed video
 }
 #video-content p {
   color: #ffffff;
+}
+
+.video-background {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ==========================================================================

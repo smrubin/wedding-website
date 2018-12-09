@@ -1,7 +1,6 @@
 import './vendor/bootstrap.min.js';
 import './vendor/ouical.js';
 import './vendor/jquery.fancybox.pack.js';
-import './vendor/jquery.mb.YTPlayer.min.js';
 import 'waypoints/lib/jquery.waypoints.js';
 
 $(document).ready(function () {
@@ -60,10 +59,6 @@ $(document).ready(function () {
 	});
 
     /***************** Initiate Fancybox ******************/
-
-    $('.single_image').fancybox({
-        padding: 4
-    });
 
     $('.fancybox').fancybox({
         padding: 4,
@@ -141,10 +136,6 @@ $(document).ready(function () {
         });
 
     });
-
-    /********************** Embed youtube video *********************/
-    $('.player').YTPlayer();
-
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {
