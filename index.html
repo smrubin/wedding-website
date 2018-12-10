@@ -268,45 +268,30 @@
 	</div>
 </section>
 
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Mount Ida Farms - The Lodge - Wedding Venue</h5>
-                            <p>6903 Blenheim Road, Charlottesville, VA 24590</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Mount Ida - Tasting Room</h5>
-							<p>5600 Moonlight Drive, Charlottesville, VA 22902</p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-						<div class="col-md-6" style="padding: 5px;">
-							<a class="btn btn-accent btn-small" id="btn-show-map"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Show map</a>
-						</div>
-                        <div class="col-md-6" style="padding: 5px;">
-							<!--See https://developer.uber.com/products/ride-requests-deeplink-->
-                            <a class="btn btn-fill btn-small" href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=5600%20Moonlight%20Drive%2C%20Charlottesville%2C%20VA%2022902%2C%20USA&dropoff[latitude]=37.873018&dropoff[longitude]=-78.482753"><i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber to Tasting Room</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div id="map">
+	<div class="text-center">
+		<h3>How do I get there?</h3>
+		<p>It's way easier than you think!</p>
+	</div>
+	<div id="map-content">
+		<div class="map-card">
+			<h5>Mount Ida Farms - The Lodge - Wedding Venue</h5>
+			<p>6903 Blenheim Road, Charlottesville, VA 24590</p>
+			<a class="btn btn-fill btn-small" id="btn-show-map"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Open in Maps</a>
+		</div>
+		<div class="map-card">
+			<h5>Mount Ida - Tasting Room</h5>
+			<p>5600 Moonlight Drive, Charlottesville, VA 22902</p>
+			<!--See https://developer.uber.com/products/ride-requests-deeplink-->
+			<a class="btn btn-fill btn-small" href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=5600%20Moonlight%20Drive%2C%20Charlottesville%2C%20VA%2022902%2C%20USA&dropoff[latitude]=37.873018&dropoff[longitude]=-78.482753"><i class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber to Tasting Room</a>
+		</div>
+		<div class="map-card">
+			<h5>The Draftsman - Bus Shuttle Pickup</h5>
+			<p>TBD</p>
+			<a class="btn btn-fill btn-small" id="btn-show-map"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Open in Maps</a>
+		</div>
+	</div>
+</div>
 
 <section class="section-padding">
 	<div class="container">
@@ -331,27 +316,7 @@
     </div>
 </footer>
 
-<script>
-	// Google map
-	function initMap() {
-		var mountIdaGeo = {lat: 37.8466, lng: -78.4989};
-		var cvilleGeo = {lat: 38.0293, lng: -78.4767};
-
-		var map = new google.maps.Map(document.getElementById('map-canvas'), {
-			zoom: 14,
-			center: cvilleGeo,
-			scrollwheel: false
-		});
-
-		var mountIdaMarker = new google.maps.Marker({
-			position: mountIdaGeo,
-			map: map
-		});
-	}
-</script>
-
 <script src="dist/main.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALO1yilSCcO4w4OOIp_B0E86Beqdgo2Sw&callback=initMap"></script>
 
 </body>
 </html>
