@@ -492,19 +492,15 @@ Embed video
 /* ==========================================================================
 Google map
 ========================================================================== */
-
 #map-content {
   background: url('../img/cville-map.png');
   background-size: cover;
-}
-
-#map-content {
   margin-top: 40px;
   padding: 50px 60px;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .map-card {
