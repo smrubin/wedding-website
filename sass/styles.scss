@@ -296,27 +296,8 @@ header {
       }
     }
   }
-  ul.member-actions {
-    li {
-      display: inline;
-
-      a {
-        color: $txt-light;
-
-        &:hover {
-          color: $accent-color;
-        }
-      }
-    }
-  }
   .header-nav {
     display: inline-block;
-  }
-  .member-actions {
-    position: absolute;
-    right: 0;
-    top: 41px;
-    transition: all 300ms ease-in-out;
   }
 }
 .down-arrow {
@@ -391,10 +372,18 @@ Intro
 /* ==========================================================================
 Hotels
 ========================================================================== */
+#hotels {
+  padding: 16px;
+
+  p {
+	padding-bottom: 8px;
+  }
+}
+
 .hotels {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -408,8 +397,12 @@ Hotels
   }
 
   a {
-	margin: 16px;
+	margin: 16px auto;
 	display: block;
+  }
+
+  .btn {
+	max-width: 240px;
   }
 }
 
@@ -526,6 +519,10 @@ Google map
   padding: 20px;
   box-shadow: 3px 3px 5px 6px #ccc;
   border-radius: 8px;
+
+  p {
+	line-height: 1.41;
+  }
 }
 
 
@@ -607,10 +604,6 @@ Bootstrap override
 	transition: opacity 0.5s, visibility 0s 0.5s;
   }
 
-  ul.member-actions {
-	position: static;
-  }
-
   .navicon {
 	visibility: visible;
   }
@@ -637,10 +630,6 @@ Bootstrap override
 	display: block;
   }
 
-  nav ul.member-actions li {
-	display: block;
-  }
-
   nav a.login {
 	margin-right: 0px;
   }
@@ -655,14 +644,7 @@ Bootstrap override
 	padding-right: 0;
   }
 
-  nav .member-actions {
-	position: static;
-	padding: 0;
-	text-align: center;
-  }
-
-  nav ul.primary-nav li,
-  nav ul.member-actions li {
+  nav ul.primary-nav li {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
@@ -670,8 +652,7 @@ Bootstrap override
 	transition: transform 0.5s, opacity 0.5s;
   }
 
-  header .header-nav.open ul.primary-nav li,
-  header .header-nav.open ul.member-actions li {
+  header .header-nav.open ul.primary-nav li {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
@@ -692,14 +673,6 @@ Bootstrap override
 
   nav ul.primary-nav li:nth-child(4) {
 	transition-delay: 0.2s
-  }
-
-  nav ul.member-actions li:first-child {
-	transition-delay: 0.25s
-  }
-
-  nav ul.member-actions li:nth-child(2) {
-	transition-delay: 0.30s
   }
 
   .last {
