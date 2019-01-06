@@ -265,10 +265,6 @@ header {
     color: $txt-light;
     text-transform: uppercase;
     font-size: $nav-font-size;
-
-    &.login {
-      margin-right: 20px;
-    }
   }
   .logo {
     display: inline-block;
@@ -628,10 +624,6 @@ Bootstrap override
 
   nav ul.primary-nav li {
 	display: block;
-  }
-
-  nav a.login {
-	margin-right: 0px;
   }
 
   nav ul.primary-nav {
