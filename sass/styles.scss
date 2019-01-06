@@ -353,13 +353,64 @@ Intro
 ========================================================================== */
 #intro {
   padding-top: 40px;
+  text-align: center;
+
   img {
-	width: 100%;
-	height: auto;
+	height: 100%;
+	width: auto;
   }
 }
 #intro p {
   text-align: center;
+}
+
+.intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.intro-rachel {
+  height: 565px;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 767px) {
+	height: 80vw;
+  }
+}
+
+.intro-sam {
+  height: 565px;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 767px) {
+	height: 80vw;
+  }
+}
+
+/* ==========================================================================
+Hotels
+========================================================================== */
+.hotels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hotel-card {
+  text-align: center;
+  padding: 16px;
+  flex-basis: 33%;
+
+  p {
+	padding: 0;
+  }
+
+  a {
+	margin: 16px;
+	display: block;
+  }
 }
 
 /* ==========================================================================
