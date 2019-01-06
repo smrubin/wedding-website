@@ -492,6 +492,10 @@ Embed video
 /* ==========================================================================
 Google map
 ========================================================================== */
+#map {
+  padding: 24px;
+}
+
 #map-content {
   background: url('../img/cville-map.png');
   background-size: cover;
