@@ -1,0 +1,154 @@
+[
+  {
+	"id": "tucker",
+	"name": "Tucker",
+  	"tagline": "The Brother",
+	"questions": [
+	  {
+		"question": "After watching many hours of 101 Dalmation, I developed this nickname for you.",
+		"answer": "nodie"
+	  },
+	  {
+		"question": "Name my most recent Hannukah gift to you, in order. (comma-separated, no spaces)",
+		"answer": "nidoking,clefable,dugtrio,victreebel,gyarados,ditto,moltres"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "moopin8r"
+	  }
+	]
+  },
+  {
+	"id": "jake",
+	"name": "Jake",
+	"tagline": "The Yaakov",
+	"questions": [
+	  {
+		"question": "I was placed in a different cabin than my two best friends at this overnight camp.",
+		"answer": "timber ridge"
+	  },
+	  {
+		"question": "The party of the millennium was almost ruined from a fight between us stemming from this game.",
+		"answer": "pokemon"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "godol"
+	  }
+	]
+  },
+  {
+	"id": "jordan",
+	"name": "Jordan",
+	"tagline": "The Kocenator",
+	"questions": [
+	  {
+		"question": "Although it may not appear on an \"official\" transcript, this was the one class we shared in high school. You even have half of a t-shirt to prove it.",
+		"answer": "math modeling"
+	  },
+	  {
+		"question": "As a famous \"Pepe\" may have once said, you were \"waxed\" by Sam in FIFA, when he used this popular Spanish player (last name).",
+		"answer": "torres"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "hugo"
+	  }
+	]
+  },
+  {
+	"id": "tj",
+	"name": "TJ",
+	"tagline": "The Doctor",
+	"questions": [
+	  {
+		"question": "When writing our national outstanding math modeling paper, a certain member of our team became fixated on this.",
+		"answer": "regions"
+	  },
+	  {
+		"question": "This Guitar Hero 3 song was your bread and butter, the first you 100%'ed.",
+		"answer": "miss murder"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "snorlax"
+	  }
+	]
+  },
+  {
+	"id": "matt",
+	"name": "Matt",
+	"tagline": "Bag",
+	"questions": [
+	  {
+		"question": "We're in Spain. Barcelona, specifically. Actually, doesn't matter where we are. What does matter is that it is 3am and we are having a blast and your flight leaves at 6am. Its a one hour drive to the airport. You don't want to leave. I ask you this question.",
+		"answer": "what would kochard do"
+	  },
+	  {
+		"question": "You have health and long life, land without rent, and a child every year. You're not in Ireland. But you are playing blackjack and are dealt cards that remind you of us. Dealer shows a 19. You bet $85. You leave the table with this much in your pocket.",
+		"answer": "128"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "floaton"
+	  }
+	]
+  },
+  {
+	"id": "arjun",
+	"name": "Arjun",
+	"tagline": "The Ajay ... from LSU",
+	"questions": [
+	  {
+		"question": "In Senora Andueza's Spanish class, Jonathan B. and crew shouted this pun, referencing a popular video game series.",
+		"answer": "Call of Booty"
+	  },
+	  {
+		"question": "Per TJ's 2018 recorded statistical analysis, this person is the best sharp shooter in 21 cup, out-shooting even you.",
+		"answer": "sam"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "ajfromlsu"
+	  }
+	]
+  },
+  {
+	"id": "ajay",
+	"name": "Ajay",
+	"tagline": "The Kobe",
+	"questions": [
+	  {
+		"question": "Your dedication to the [same] team inspired me to buy my first NBA jersey, representing this big man (nickname)",
+		"answer": "shaq"
+	  },
+	  {
+		"question": "This middle school won the Henrico County Tennis Championship.",
+		"answer": "moody"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "longchipotle"
+	  }
+	]
+  },
+  {
+	"id": "michael",
+	"name": "Michael",
+	"tagline": "Wolfpack of One",
+	"questions": [
+	  {
+		"question": "After telling you one of the greatest lies I've ever told to win a game. You, as a true friend, warned me, that this competitor would be targeting me at a soccer match.",
+		"answer": "ben terner"
+	  },
+	  {
+		"question": "As the first of the \"Wyndham\" bunch that I met, we shared this science teacher at our new school (last name).",
+		"answer": "leith"
+	  },
+	  {
+		"question": "Your code:",
+		"answer": "wolfpack"
+	  }
+	]
+  }
+]

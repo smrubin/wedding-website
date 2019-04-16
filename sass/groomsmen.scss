@@ -1,0 +1,67 @@
+.groomsmen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .modal-backdrop {
+	display: none;
+  }
+
+  .modal-body {
+	padding: 0;
+  }
+
+  .modal-dialog {
+	width: 100%;
+	margin: 0;
+  }
+
+  .modal-dialog, .modal-content, .modal-body {
+	height: 100%;
+  }
+
+  button.close {
+	font-size: 36px;
+	position: relative;
+	z-index: 1000;
+  }
+
+  .fa-check {
+	color: green;
+  }
+
+  .groomsman {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&-headshot {
+	  border-radius: 50%;
+	  width: 200px;
+	  margin: 20px;
+	}
+
+	&-hint {
+	  font-size: 18px;
+	}
+
+	&-form {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+
+  .behind-the-locker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	img {
+	  width: 100%;
+	}
+  }
+
+
+}
