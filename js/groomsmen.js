@@ -46,5 +46,13 @@
 		}
 	});
 
+	/**
+	 * Accept
+	 */
+	const acceptButton = $('.groomsman-accept');
+	acceptButton.click(() => {
+		$('.pyro').removeClass('hidden');
+		$('.groomsman-music').trigger("play");
+	});
 
 })();

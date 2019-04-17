@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  //overflow: hidden;
 
   .modal-backdrop {
 	display: none;
@@ -27,7 +28,7 @@
 	margin: 16px;
 	position: absolute;
 	right: 0;
-	z-index: 100;
+	z-index: 2000;
   }
 
   .fa-check {
