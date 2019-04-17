@@ -43,6 +43,7 @@ $box-shadow2: ();
   bottom: 0;
   left: 0;
   z-index: 1100;
+  pointer-events: none;
 }
 
 .pyro > .before, .pyro > .after {
