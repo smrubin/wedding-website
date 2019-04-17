@@ -12,7 +12,7 @@ module.exports = () => {
 
 	const config = {
 
-		entry: ['./js/app.js', './js/groomsmen.js', './sass/styles.scss', './groomsmen.ejs'],
+		entry: ['./js/app.js', './sass/styles.scss', './groomsmen.ejs', './js/groomsmen.js', './sass/groomsmen.scss'],
 
 		/**
 		 * Compile for usage in a browser-like environment
