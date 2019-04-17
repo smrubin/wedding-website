@@ -1,8 +1,17 @@
+#groomsmen {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  position: relative;
+
+  .container {
+	position: absolute;
+  }
+}
+
 .groomsmen {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  //overflow: hidden;
+  justify-content: space-between;
 
   .modal-backdrop {
 	display: none;
@@ -23,6 +32,11 @@
 	overflow: hidden;
   }
 
+  .form-group {
+	width: 100%;
+	max-width: 600px;
+  }
+
   button.close {
 	font-size: 36px;
 	margin: 16px;
@@ -39,6 +53,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 16px 0;
 
 	&-headshot {
 	  border-radius: 50%;
@@ -55,13 +70,16 @@
 	  flex-direction: column;
 	  align-items: center;
 	}
+
+	&-question {
+	  display: block;
+	}
   }
 
   .groomsman-reveal {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	position: relative;
 	height: 100%;
 
