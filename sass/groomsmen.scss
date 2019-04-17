@@ -4,7 +4,8 @@
   position: relative;
 
   .container {
-	position: absolute;
+	// todo - fix this to allow modal close
+	//position: absolute;
   }
 }
 
@@ -74,6 +75,11 @@
 	&-question {
 	  display: block;
 	}
+
+	&-ask {
+	  width: 50%;
+	  margin-bottom: 16px;
+	}
   }
 
   .groomsman-reveal {
@@ -82,11 +88,11 @@
 	align-items: center;
 	position: relative;
 	height: 100%;
+	padding: 16px;
 
 	p {
 	  font-size: 16px;
 	  line-height: 32px;
-	  width: 50%;
 	}
 
 	img {

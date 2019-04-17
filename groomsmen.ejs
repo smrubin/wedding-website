@@ -69,11 +69,15 @@
 							<div class="locker--bottom animated"></div>
 
 							<div class="groomsman-reveal">
-								<p><%= groomsman.name %>,</p>
-								<p>
-									<%= groomsman.ask %>
+								<div class="groomsman-ask">
+									<p><%= groomsman.name %>,</p>
+									<p><%= groomsman.ask %></p>
 									<button class="groomsman-accept btn btn-fill btn-small">Yes!</button>
-								</p>
+									<div class="pyro hidden">
+										<div class="before"></div>
+										<div class="after"></div>
+									</div>
+								</div>
 
 								<img src="img/groomsmen/<%= groomsman.id %>-sam.jpg">
 							</div>
@@ -84,7 +88,6 @@
 			</div><!-- /.modal -->
 
 		<% }); %>
-
 		</div>
 
 		<footer>
@@ -94,11 +97,6 @@
 			</div>
 		</footer>
 
-	</div>
-
-	<div class="pyro hidden">
-		<div class="before"></div>
-		<div class="after"></div>
 	</div>
 
 	<audio class="groomsman-music" src="./assets/rainbow.mp3"></audio>
