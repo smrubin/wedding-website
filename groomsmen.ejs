@@ -43,12 +43,10 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
 
 							<section class="locker">
 								<div class="locker--top animated">
-
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
-
 									<h3 class="text-center section-padding">Only the chosen one can accept...</h3>
 
 									<div class="groomsman-form">
@@ -73,8 +71,9 @@
 								<div class="locker--bottom animated"></div>
 							</section>
 
-							<div class="behind-the-locker">
-								Hey Tucker, congrautlations you are really awesome.
+							<div class="groomsman-reveal">
+								<p><%= groomsman.name %>,</p>
+								<p><%= groomsman.ask %></p>
 
 								<img src="img/groomsmen/<%= groomsman.id %>-sam.jpg">
 							</div>

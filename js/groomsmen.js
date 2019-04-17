@@ -11,7 +11,7 @@
 	const lockBottom = 'animated slideInUp';
 	const lockerLock = $('.locker--lock');
 	const unlockLock = 'animated fast spin';
-	const behindLocker = $('.behind-the-locker');
+	const behindLocker = $('.groomsman-reveal');
 
 	function unlock(groomsman) {
 		const el = $(`#modal-${groomsman}`);

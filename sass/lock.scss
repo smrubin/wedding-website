@@ -16,11 +16,6 @@ $key-width: 19px;
 $key-height: 63px;
 $key-half-height: $key-height / 2;
 
-.behind-the-locker {
-  background-color: $white;
-  z-index: -1;
-}
-
 .locker {
   position: absolute;
   top: 0;
