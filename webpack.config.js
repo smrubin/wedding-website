@@ -1,8 +1,8 @@
 const webpack = require('webpack');
-const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const groomsmen = require("./data/groomsmen");
 
 /**
  * Webpack configuration
@@ -12,7 +12,7 @@ module.exports = () => {
 
 	const config = {
 
-		entry: ['./js/app.js', './sass/styles.scss'],
+		entry: ['./js/app.js', './sass/styles.scss', './groomsmen.ejs', './js/groomsmen.js', './sass/groomsmen.scss'],
 
 		/**
 		 * Compile for usage in a browser-like environment
@@ -33,6 +33,28 @@ module.exports = () => {
 		 */
 		module: {
 			rules: [
+				{
+					test: /\.ejs$/,
+					use: [
+						{
+							loader: 'file-loader',
+							options: {
+								name: '[name].html',
+								context: './',
+								outputPath: '/'
+							}
+						},
+						{
+							loader: 'extract-loader'
+						},
+						{
+							loader: "ejs-webpack-loader",
+							options: {
+								data: {groomsmen: groomsmen},
+							}
+						}
+					]
+				},
 				{
 					/**
 					 * Loads ES2015+ code and transpiles to ES5 using Babel

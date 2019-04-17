@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Sam & Rachel getting married!</title>
+
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+    <link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+
+<section id="groomsmen">
+    <div class="container">
+		<h3 class="header">The Groomsmen</h3>
+
+		<div class="groomsmen">
+		<% groomsmen.forEach(function(groomsman) { %>
+
+			<div class="groomsman">
+				<img src="img/groomsmen/<%= groomsman.id %>.jpg" class="groomsman-headshot">
+				<div class="groomsman-hint">
+					<%= groomsman.tagline %>
+				</div>
+
+				<div class="envelope" data-toggle="modal" data-target="#modal-<%= groomsman.id %>">
+					<div class="envelope-flap"></div>
+					<div class="envelope-detail"></div>
+				</div>
+
+				<p>Awaiting Confirmation</p>
+			</div>
+
+			<div id="modal-<%= groomsman.id %>" class="modal fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+
+							<div class="locker--top animated">
+								<h3 class="text-center section-padding">Only the chosen one can accept...</h3>
+
+								<div class="groomsman-form">
+									<% groomsman.questions.forEach(function(question, i) { %>
+
+									<div class="form-group">
+										<label for="<%= groomsman.id %>-q<%= i %>"><%= question.question %></label>
+										<input id="<%= groomsman.id %>-q<%= i %>" class="groomsman-question" type="text" data-answer="<%= question.answer %>" data-groomsman="<%= groomsman.id %>">
+									</div>
+
+									<% }); %>
+								</div>
+
+								<div class="locker--lock">
+									<svg viewBox="0 0 130 130">
+										<path class="locker--lock__grey" d="M65,125L65,125C32,125,5,98,5,65v0C5,32,32,5,65,5h0c33,0,60,27,60,60v0C125,98,98,125,65,125z"/>
+										<path class="locker--lock__blue" d="M66,16.5h-2c-26.1,0-47.5,21.4-47.5,47.5v2c0,26.1,21.4,47.5,47.5,47.5h2c26.1,0,47.5-21.4,47.5-47.5v-2C113.5,37.9,92.1,16.5,66,16.5z"/>
+										<image width="60" height="60" x="35" y="35" xlink:href="img/logo-silver.png" />
+									</svg>
+								</div>
+							</div>
+							<div class="locker--bottom animated"></div>
+
+							<div class="groomsman-reveal">
+								<div class="groomsman-ask">
+									<p><%= groomsman.name %>,</p>
+									<p><%= groomsman.ask %></p>
+									<button class="groomsman-accept btn btn-fill btn-small">Yes!</button>
+								</div>
+
+								<img src="img/groomsmen/<%= groomsman.id %>-sam.jpg">
+							</div>
+
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->s
+			</div><!-- /.modal -->
+
+		<% }); %>
+		</div>
+
+		<div class="pyro hidden">
+			<div class="before"></div>
+			<div class="after"></div>
+		</div>
+
+		<footer>
+			<div class="text-center content">
+				<br>
+				<p>Crafted by Sam with lots of <span class="fa fa-heart pulse2"></span> for Rachel</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<audio class="groomsman-music" src="./assets/rainbow.mp3"></audio>
+
+</section>
+
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+
+<script src="dist/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@keyframes wiggle {
+  0% {
+	transform: rotate(0);
+  }
+
+  25% {
+	transform: rotate(2deg);
+  }
+
+  50% {
+	transform: rotate(0deg);
+  }
+
+  75% {
+	transform: rotate(-2deg);
+  }
+
+  100% {
+	transform: rotate(0);
+  }
+}
+
+.envelope {
+  width: 94px;
+  height: 60px;
+  background: #f36363;
+  position: relative;
+  margin: 20px auto;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease;
+  animation: wiggle 0.3s 0.2s infinite;
+}
+
+.envelope-flap {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 45px solid #f36363;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+
+.envelope-detail {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  background: #f36363;
+  border-top: 2px solid transparent;
+  &:before {
+	content: '';
+	width: 70px;
+	height: 70px;
+	background: #f36363;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+	margin: auto;
+	transform: rotate(45deg);
+	border: 4px solid #e65454;
+  }
+  &:after {
+	content: '';
+	width: 70px;
+	height: 70px;
+	background: #f36363;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -45px;
+	margin: auto;
+	transform: rotate(45deg);
+	border: 4px solid #e65454;
+  }
+}
+

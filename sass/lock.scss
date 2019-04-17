@@ -1,0 +1,167 @@
+@import "partials/colors";
+
+/*
+ * Locker
+ */
+
+$blue: #48b4cc;
+$grey-1: #6d6e71;
+$grey-2: #bdbec0;
+$grey-3: #f3f3f3;
+$grey-4: #e7e7e7;
+
+$locker-size: 145px;
+$locker-half: ($locker-size / 2);
+
+$key-width: 19px;
+$key-height: 63px;
+$key-half-height: $key-height / 2;
+
+.locker {
+  &--top,
+  &--bottom {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50%;
+	background-color: $grey-3;
+  }
+
+  &--top:after,
+  &--bottom:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 15px;
+  }
+
+  &--top {
+	top: 0;
+	border-bottom: 7px solid $grey-2;
+	z-index: 10;
+
+	&:after {
+	  bottom: 0;
+	  border-bottom: $grey-4 solid 20px;
+	}
+  }
+
+  &--bottom {
+	top: 50%;
+	border-top: 7px solid $grey-2;
+	z-index: 5;
+
+	&:before {
+	  top: 0;
+	  border-top: $grey-4 solid 20px;
+	}
+  }
+
+  &--lock {
+	position: absolute;
+	left: 50%;
+	bottom: -($locker-half) - 6px;
+	margin-left: -($locker-half);
+	z-index: 10;
+
+	svg {
+	  width: $locker-size;
+	  height: $locker-size;
+	}
+
+	&__grey {
+	  fill: none;
+	  stroke: $grey-2;
+	  stroke-width: 7.5px;
+	}
+
+	&__blue {
+	  fill: $white-color;
+	  stroke: $blue;
+	  stroke-width: 15px;
+	}
+
+	&--unlock {
+	  transform: rotate(180deg);
+	}
+  }
+}
+
+/*
+ * Animations
+ */
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  from {
+	transform: translate3d(0, -200%, 0);
+	visibility: visible;
+  }
+
+  to {
+	transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInUp {
+  from {
+	transform: translate3d(0, 100%, 0);
+	visibility: visible;
+  }
+
+  to {
+	transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+@keyframes slideOutDown {
+  from {
+	transform: translate3d(0, 0, 0);
+  }
+
+  to {
+	visibility: hidden;
+	transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+}
+
+@keyframes slideOutUp {
+  from {
+	transform: translate3d(0, 0, 0);
+  }
+
+  to {
+	visibility: hidden;
+	transform: translate3d(0, -200%, 0);
+  }
+}
+
+.slideOutUp {
+  animation-name: slideOutUp;
+}
+
+@keyframes spin {
+  100% {
+	transform:rotate(90deg);
+  }
+}
+
+.spin {
+  animation-name: spin;
+}
