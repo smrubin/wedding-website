@@ -39,6 +39,7 @@ $key-half-height: $key-height / 2;
 	top: 0;
 	border-bottom: 7px solid $grey-2;
 	z-index: 10;
+	height: 60%;
 
 	&:after {
 	  bottom: 0;
@@ -47,9 +48,10 @@ $key-half-height: $key-height / 2;
   }
 
   &--bottom {
-	top: 50%;
+	top: 60%;
 	border-top: 7px solid $grey-2;
 	z-index: 5;
+	height: 40%	;
 
 	&:before {
 	  top: 0;

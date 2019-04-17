@@ -39,7 +39,7 @@
 		const el = $(event.currentTarget);
 		const groomsman = el.data('groomsman');
 
-		if (el.val().toLowerCase() === el.data('answer').toLowerCase()) {
+		if (el.val().toLowerCase() === el.data('answer').toString().toLowerCase()) {
 			el.prop('disabled', true);
 			el.after('<i class="fas fa-check"></i>');
 			handleUnlock(groomsman);
