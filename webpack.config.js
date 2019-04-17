@@ -41,7 +41,7 @@ module.exports = () => {
 							options: {
 								name: '[name].html',
 								context: './',
-								outputPath: '/'
+								outputPath: '../' // Moving up to root dir for github pages.
 							}
 						},
 						{
