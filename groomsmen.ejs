@@ -45,31 +45,29 @@
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
 
-							<section class="locker">
-								<div class="locker--top animated">
-									<h3 class="text-center section-padding">Only the chosen one can accept...</h3>
+							<div class="locker--top animated">
+								<h3 class="text-center section-padding">Only the chosen one can accept...</h3>
 
-									<div class="groomsman-form">
-										<% groomsman.questions.forEach(function(question, i) { %>
+								<div class="groomsman-form">
+									<% groomsman.questions.forEach(function(question, i) { %>
 
-										<div class="form-group">
-											<label for="<%= groomsman.id %>-q<%= i %>"><%= question.question %></label>
-											<input id="<%= groomsman.id %>-q<%= i %>" class="groomsman-question" type="text" data-answer="<%= question.answer %>" data-groomsman="<%= groomsman.id %>">
-										</div>
-
-										<% }); %>
+									<div class="form-group">
+										<label for="<%= groomsman.id %>-q<%= i %>"><%= question.question %></label>
+										<input id="<%= groomsman.id %>-q<%= i %>" class="groomsman-question" type="text" data-answer="<%= question.answer %>" data-groomsman="<%= groomsman.id %>">
 									</div>
 
-									<div class="locker--lock">
-										<svg viewBox="0 0 130 130">
-											<path class="locker--lock__grey" d="M65,125L65,125C32,125,5,98,5,65v0C5,32,32,5,65,5h0c33,0,60,27,60,60v0C125,98,98,125,65,125z"/>
-											<path class="locker--lock__blue" d="M66,16.5h-2c-26.1,0-47.5,21.4-47.5,47.5v2c0,26.1,21.4,47.5,47.5,47.5h2c26.1,0,47.5-21.4,47.5-47.5v-2C113.5,37.9,92.1,16.5,66,16.5z"/>
-											<rect x="59" y="42.5" class="locker--lock__hole" width="12" height="45"/>
-										</svg>
-									</div>
+									<% }); %>
 								</div>
-								<div class="locker--bottom animated"></div>
-							</section>
+
+								<div class="locker--lock">
+									<svg viewBox="0 0 130 130">
+										<path class="locker--lock__grey" d="M65,125L65,125C32,125,5,98,5,65v0C5,32,32,5,65,5h0c33,0,60,27,60,60v0C125,98,98,125,65,125z"/>
+										<path class="locker--lock__blue" d="M66,16.5h-2c-26.1,0-47.5,21.4-47.5,47.5v2c0,26.1,21.4,47.5,47.5,47.5h2c26.1,0,47.5-21.4,47.5-47.5v-2C113.5,37.9,92.1,16.5,66,16.5z"/>
+										<image width="60" height="60" x="35" y="35" xlink:href="img/logo-silver.png" />
+									</svg>
+								</div>
+							</div>
+							<div class="locker--bottom animated"></div>
 
 							<div class="groomsman-reveal">
 								<p><%= groomsman.name %>,</p>
@@ -93,6 +91,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">
+				<br>
                 <p>Crafted by Sam with lots of <span class="fa fa-heart pulse2"></span> for Rachel</p>
             </div>
         </div>

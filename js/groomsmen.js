@@ -10,15 +10,13 @@
 	const lockTop = 'animated slideInDown';
 	const lockBottom = 'animated slideInUp';
 	const lockerLock = $('.locker--lock');
-	const unlockLock = 'animated fast spin';
-	const behindLocker = $('.groomsman-reveal');
+	const unlockLock = 'animated spin';
 
 	function unlock(groomsman) {
 		const el = $(`#modal-${groomsman}`);
 		el.find(lockerLock).addClass(unlockLock);
 		el.find(lockerTop).removeClass(lockTop).addClass(unlockTop);
 		el.find(lockerBottom).removeClass(lockBottom).addClass(unlockBottom);
-		el.find(behindLocker).css('z-index', 2);
 	}
 
 	function isLastUnlock(groomsman) {
