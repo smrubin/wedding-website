@@ -3,6 +3,7 @@
 	"id": "tucker",
 	"name": "Tucker",
   	"tagline": "The Brother",
+	"status": "Confirmed - 3rd (potentially DQ'ed for cheating)",
 	"questions": [
 	  {
 		"question": "After watching many hours of 101 Dalmatians, I developed this nickname for you.",
@@ -23,7 +24,8 @@
 	"id": "jake",
 	"name": "Jake",
 	"tagline": "Yaakov",
-	"questions": [
+
+	"status": "Awaiting Confirmation","questions": [
 	  {
 		"question": "I was placed in a different cabin than my two best friends at this overnight camp.",
 		"answer": "timber ridge"
@@ -43,6 +45,7 @@
 	"id": "jordan",
 	"name": "Jordan",
 	"tagline": "The Kocenator",
+	"status":  "Awaiting Confirmation",
 	"questions": [
 	  {
 		"question": "Although it may not appear on an \"official\" transcript, this was the one class we shared in high school. You even have half of a t-shirt to prove it.",
@@ -63,6 +66,7 @@
 	"id": "tj",
 	"name": "TJ",
 	"tagline": "The Doctor",
+	"status":  "Awaiting Confirmation",
 	"questions": [
 	  {
 		"question": "When writing our national outstanding math modeling paper, a certain member of our team became fixated on this.",
@@ -83,6 +87,7 @@
 	"id": "matt",
 	"name": "Matt",
 	"tagline": "Bag",
+	"status":  "Awaiting Confirmation",
 	"questions": [
 	  {
 		"question": "We're in Spain. Barcelona, specifically. Actually, doesn't matter where we are. What does matter is that it is 3am and we are having a blast and your flight leaves at 6am. Its a one hour drive to the airport. You don't want to leave. I ask you this question.",
@@ -103,6 +108,7 @@
 	"id": "arjun",
 	"name": "Arjun",
 	"tagline": "AJ from LSU",
+	"status":  "Confirmed - 1st",
 	"questions": [
 	  {
 		"question": "In Senora Andueza's Spanish class, Jonathan B. and crew shouted this pun, referencing a popular video game series.",
@@ -123,6 +129,7 @@
 	"id": "ajay",
 	"name": "Ajay",
 	"tagline": "The Kobe",
+	"status":  "Confirmed - 2nd",
 	"questions": [
 	  {
 		"question": "Your dedication to the [same] team inspired me to buy my first NBA jersey, representing this big man (nickname)",
@@ -143,6 +150,7 @@
 	"id": "michael",
 	"name": "Michael",
 	"tagline": "Wolfpack of One",
+	"status":  "Awaiting Confirmation",
 	"questions": [
 	  {
 		"question": "After telling you one of the greatest lies I've ever told to win a game. You, as a true friend, warned me, that this competitor would be targeting me at a soccer match.",
