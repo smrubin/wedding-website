@@ -25,7 +25,8 @@
 	"name": "Jake",
 	"tagline": "Yaakov",
 
-	"status": "Awaiting Confirmation","questions": [
+	"status": "Confirmed - 5th",
+	"questions": [
 	  {
 		"question": "I was placed in a different cabin than my two best friends at this overnight camp.",
 		"answer": "timber ridge"
@@ -66,7 +67,7 @@
 	"id": "tj",
 	"name": "TJ",
 	"tagline": "The Doctor",
-	"status":  "Awaiting Confirmation",
+	"status":  "Confirmed - 6th",
 	"questions": [
 	  {
 		"question": "When writing our national outstanding math modeling paper, a certain member of our team became fixated on this.",
@@ -87,7 +88,7 @@
 	"id": "matt",
 	"name": "Matt",
 	"tagline": "Bag",
-	"status":  "Awaiting Confirmation",
+	"status":  "Confirmed - 4th",
 	"questions": [
 	  {
 		"question": "We're in Spain. Barcelona, specifically. Actually, doesn't matter where we are. What does matter is that it is 3am and we are having a blast and your flight leaves at 6am. Its a one hour drive to the airport. You don't want to leave. I ask you this question.",
@@ -150,7 +151,7 @@
 	"id": "michael",
 	"name": "Michael",
 	"tagline": "Wolfpack of One",
-	"status":  "Awaiting Confirmation",
+	"status":  "Confirmed - 7th",
 	"questions": [
 	  {
 		"question": "After telling you one of the greatest lies I've ever told to win a game. You, as a true friend, warned me, that this competitor would be targeting me at a soccer match.",
